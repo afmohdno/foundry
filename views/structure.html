@@ -1,0 +1,78 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+%include views/head.html
+<body>
+  <div id="body_bg">
+    %include views/pre-header.html
+    <div class="primary-container-group">
+      <!-- Background -->
+      <div class="primary-container-background">
+        <div class="primary-container"></div>
+        <div class="clearfix"></div>
+      </div>
+      <!--End Background -->
+      <div class="primary-container">
+        %include views/header.html
+        <!-- === END HEADER === -->
+        <!-- === BEGIN CONTENT === -->
+        <div id="content">
+          <div class="container">
+            <div class="row margin-vert-30 flex-md">
+              <!-- Side Column -->
+              <div class="col-md-3">
+                <!-- Recent Posts -->
+                <div class="panel panel-default" data-uk-sticky="{top:35, media:990, boundary:true}">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">About Us</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul class="posts-list">
+                      <li>
+                        <a href="/about" class="posts-list-title">Overview</a>
+                      </li>
+                      <li>
+                        <a href="/about/background" class="posts-list-title">Company Background</a>
+                      </li>
+                      <li>
+                        <a href="/about/structure" class="posts-list-title">Company Structure</a>
+                      </li>
+                      <li>
+                        <a href="/about/policy" class="posts-list-title">Business Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End recent Posts -->
+              </div>
+              <!-- End Side Column -->
+              <!-- Main Column -->
+              <div class="col-md-9">
+                <!-- Main Content -->
+                <h2>Company Structure</h2>
+                <a rel="lightbox" href="img/PCLP_structure.png">
+                  <img src="img/PCLP_structure.png" class="margin-bottom-10">
+                </a>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                  in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                  sint occaecati cupiditate non sit amet, consectetur adipiscing elit. Ut adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <!-- End Main Content -->
+              </div>
+              <!-- End Main Column -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- === END CONTENT === -->
+    <!-- === BEGIN FOOTER === -->
+    %include views/footer.html
+  </div>
+</body>
+</html>
+<!-- === END FOOTER === -->

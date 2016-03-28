@@ -1,0 +1,49 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  %include views/head.html
+</head>
+<body>
+  <div id="body_bg">
+    %include views/pre-header.html
+    <div class="primary-container-group">
+      <!-- Background -->
+      <div class="primary-container-background">
+        <div class="primary-container"></div>
+        <div class="clearfix"></div>
+      </div>
+      <!--End Background -->
+      <div class="primary-container">
+        %include views/header.html
+        <!-- End Top Menu -->
+        <!-- === END HEADER === -->
+        <!-- === BEGIN CONTENT === -->
+        <div id="content">
+          <div class="container">
+            <div class="row margin-vert-30">
+              <div class="col-md-12">
+                <div class="error-404-page text-center">
+                  <h2>404!</h2>
+                  <h3>The page can not be found</h3>
+                  <p>The page you are looking for might have been removed,
+                    <br>had its name changed or is temporarily unavailable.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- === END CONTENT === -->
+    <!-- === BEGIN FOOTER === -->
+    %include views/footer.html
+  </div>
+</body>
+</html>
+<!-- === END FOOTER === -->

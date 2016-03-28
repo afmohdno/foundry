@@ -1,74 +1,182 @@
+<!-- === BEGIN HEADER === -->
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
-  <title>foundry</title>
   %include views/head.html
-  <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	%include views/navbar.html
-	<div class="uk-container uk-container-center uk-margin">
-		<section class="uk-grid uk-grid-small">
-			<div class="uk-width-2-10">
-				<div class="uk-panel">Logo</div>
-			</div>
-			<div class="uk-width-6-10">
-				<div class="uk-panel">Contact</div>
-			</div>
-			<div class="uk-width-2-10">
-				<div class="uk-panel">
-					<form class="uk-form">
-						<input type="text" class="uk-width-1-1" placeholder="Search">
-					</form>
-				</div>
-			</div>
-		</section>
-		<hr>
-		<section>
-			<div class="uk-slidenav-position" data-uk-slider>
-			    <div class="uk-slider-container">
-		        <ul class="uk-slider uk-text-center uk-grid-width-medium-1-1">
-	            <li>
-	            	<img src="img/create.png">
-	            </li>
-	            <li>
-	            	<img src="img/slide-1.jpg">
-	            </li>
-	            <li>
-	            	<img src="img/slide-2.jpg">
-	            </li>
-	            <li>
-	            	<img src="img/slide-3.jpg">
-	            </li>
-		        </ul>
-			    </div>
-		    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
-		    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next"></a>
-			</div>
-		</section>
-		<hr>
-		<section class="uk-grid uk-grid-small" data-uk-margin>
-			<div class="uk-width-1-1">
-				<h1 class="uk-margin-remove">Custom Foundry</h1>
-				<h2 class="uk-margin-remove uk-text-muted">Custom metal casting service</h2>
-			</div>
-			<div class="uk-width-1-2">
-				<img src="img/product.jpg">
-			</div>
-			<div class="uk-width-1-2">
-				<img src="img/pump_casting.jpg">
-			</div>
-			<div class="uk-width-1-2">
-				<img src="img/casting.jpg">
-			</div>
-			<div class="uk-width-1-2">
-				<img src="img/placeholder_medium.svg">
-			</div>
-		</section>
-		<hr>
-		<p>PCLP Foundry offers a one stop solution for  precision investment casting, also known as lost wax casting, for a variety of materials, including carbon steel, stainless steel, aluminium, brass, bronze and specialty alloys depending on client’s requirements. Our capability to produce high quality and durability for the toughest industrial application is well recognised by oil &amp; gas giant such as PETRONAS. Other sector that we serve are mining, food &amp; dairy, medical, power generation, hardware &amp; locks, military &amp; firearms, agriculture and general application. Whether your objective is to optimize strength, improve dimensional control and surface finish or increase yield, we will strive to deliver a complete solution.</p>
-	</div>
-	%include views/footer.html
-	%include views/script.html
+  <div id="body_bg">
+    %include views/pre-header.html
+    <div class="primary-container-group">
+      <!-- Background -->
+      <div class="primary-container-background">
+        <div class="primary-container"></div>
+        <div class="clearfix"></div>
+      </div>
+      <!--End Background -->
+      <div class="primary-container">
+        %include views/header.html
+        <!-- === END HEADER === -->
+        <!-- === BEGIN CONTENT === -->
+        <div id="content">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Carousel Slideshow -->
+              <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                <!-- Carousel Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example" data-slide-to="1"></li>
+                  <li data-target="#carousel-example" data-slide-to="2"></li>
+                </ol>
+                <div class="clearfix"></div>
+                <!-- End Carousel Indicators -->
+                <!-- Carousel Images -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/slideshow/slider1.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="img/slideshow/slider2.jpg">
+                  </div>
+                  <div class="item">
+                    <img src="img/slideshow/slider3.jpg">
+                  </div>
+                </div>
+                <!-- End Carousel Images -->
+                <!-- Carousel Controls -->
+                <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                <!-- End Carousel Controls -->
+              </div>
+              <!-- End Carousel Slideshow -->
+            </div>
+          </div>
+          <div class="container-fluid landing-content">
+            <div class="row">
+              <h2 class="animate fadeIn text-center margin-top-50">Steel manufacturing foundry</h2>
+              <hr class="margin-top-15">
+              <p class="animate fadeIn text-center">We offer custom steel manufacturing services like tooling making,<br>investment casting, sand casting and more!</p>
+              <p class="text-center animate fadeInUp margin-bottom-50">
+                <button type="button" class="btn btn-lg rounded">Contact Us</button>
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row margin-vert-30">
+              <!-- Main Text -->
+              <div class="col-md-9">
+                <h2>PLCP Foundry</h2>
+                <p class="text-justify">PCLP Foundry offers a one stop solution for  precision investment casting, also known as lost wax casting, for a variety of materials, including carbon steel, stainless steel, aluminium, brass, bronze and specialty alloys depending on client’s requirements. Our capability to produce high quality and durability for the toughest industrial application is well recognised by oil &amp; gas giant such as PETRONAS. Other sector that we serve are mining, food &amp; dairy, medical, power generation, hardware &amp; locks, military &amp; firearms, agriculture and general application. Whether your objective is to optimize strength, improve dimensional control and surface finish or increase yield, we will strive to deliver a complete solution.</p>
+                <img class="visible-lg animate fadeInUp" style="bottom: -50px; position: relative; left: 85px; margin-top: -20px;" src="img/frontpage/responsive_homepage.png" alt="">
+              </div>
+              <!-- End Main Text -->
+              <!-- Side Column -->
+              <div class="col-md-3">
+                <h3 class="title">Opening hours</h3>
+                <h6 style="margin: 0;">Mon - Wed</h6>
+                <h4 style="margin: 0;">7:00 am - 1:30 pm</h4>
+                <p>
+                  <small>* Lorem ipsum dolor sit amet</small>
+                </p>
+                <hr>
+                <h6 style="margin: 0;">Thursday</h6>
+                <h4 style="margin: 0;">7:00 am - 1:30 pm</h4>
+                <p>
+                  <small>* Lorem ipsum dolor sit amet</small>
+                </p>
+                <hr>
+                <h6 style="margin: 0;">Fri-Sat</h6>
+                <h4 style="margin: 0;">7:00 am - 1:30 pm</h4>
+                <p>
+                  <small>* Lorem ipsum dolor sit amet</small>
+                </p>
+                <hr>
+                <h6 style="margin: 0;">Suday</h6>
+                <h4 style="margin: 0;">CLOSED</h4>
+                <p>
+                  <small>* Lorem ipsum dolor sit amet</small>
+                </p>
+                <hr>
+              </div>
+              <!-- End Side Column -->
+            </div>
+          </div>
+          <div class="container background-gray-lighter">
+            <div class="row row-no-margin">
+              <!-- Portfolio -->
+              <ul class="portfolio-group">
+                <!-- Portfolio Item -->
+                <li class="portfolio-item col-sm-3 col-xs-6 no-padding">
+                  <a href="#">
+                    <h3>Placerat facer possim</h3>
+                    <figure class="animate fadeInLeft animated">
+                      <img alt="image1" src="img/frontpage/image1.png">
+                      <figcaption>
+                        <span style="color:#212121; ">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <!-- //Portfolio Item// -->
+                <!-- Portfolio Item -->
+                <li class="portfolio-item col-sm-3 col-xs-6 no-padding">
+                  <a href="#">
+                    <h3>Placerat facer possim</h3>
+                    <figure class="animate fadeInLeft animated">
+                      <img alt="image2" src="img/frontpage/image2.png">
+                      <figcaption>
+                        <span style="color:#212121; ">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <!-- //Portfolio Item// -->
+                <!-- Portfolio Item -->
+                <li class="portfolio-item col-sm-3 col-xs-6 no-padding">
+                  <a href="#">
+                    <h3>Placerat facer possim</h3>
+                    <figure class="animate fadeInLeft animated">
+                      <img alt="image3" src="img/frontpage/image3.png">
+                      <figcaption>
+                        <span style="color:#212121; ">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <!-- //Portfolio Item// -->
+                <!-- Portfolio Item -->
+                <li class="portfolio-item col-sm-3 col-xs-6 no-padding">
+                  <a href="#">
+                    <h3>Placerat facer possim</h3>
+                    <figure class="animate fadeInLeft animated">
+                      <img alt="image4" src="img/frontpage/image4.png">
+                      <figcaption>
+                        <span style="color:#212121; ">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <!-- //Portfolio Item// -->
+              </ul>
+              <!-- End Portfolio -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- === END CONTENT === -->
+    <!-- === BEGIN FOOTER === -->
+    %include views/footer.html
+  </div>
 </body>
 </html>
+<!-- === END FOOTER === -->

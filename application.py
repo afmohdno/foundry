@@ -7,25 +7,49 @@ application = default_app()
 def main():
 	return template("views/index.html")
 
-@route('/contact_us')
+@route('/contact')
 def contact():
 	return template("views/contact.html")
 
-@route('/tooling_making')
+@route('/about')
+def about_us():
+	return template("views/about.html")
+
+@route('/about/background')
+def about_us1():
+	return template("views/background.html")
+
+@route('/about/structure')
+def about_us2():
+	return template("views/structure.html")
+
+@route('/about/policy')
+def about_us3():
+	return template("views/policy.html")
+
+@route('/products')
+def product():
+	return template("views/product.html")
+
+@route('/services')
 def service():
-	return template("views/toolingmaking.html")
+	return template("views/services.html")
 
 @route('/investment_casting')
 def service():
 	return template("views/investmentcasting.html")
 
-@route('/tooling_making')
-def service():
-	return template("views/toolingmaking.html")
-
-@route('/quality_assurance')
+@route('/qa')
 def QA():
-	return template("views/qualityassurance.html")
+	return template("views/qa.html")
+
+@route('/customers')
+def customers():
+	return template("views/customers.html")
+
+@route('/blank')
+def blank():
+	return template("views/blank-page.html")
 	
 @route('/favicon.ico')
 def get_favicon():
@@ -35,7 +59,7 @@ def get_favicon():
 @error(404)
 def error_404(error):
 	"""Return a custom 404 error."""
-	return 'Sorry, Nothing at this URL.'
+	return template("views/404.html")
 
 # Define an handler for 500 errors.
 @error(500)
@@ -45,6 +69,7 @@ def error_500(error):
 
 # specifying the path for the files
 @route('/<filepath:path>')
+@route('/about/<filepath:path>')
 def server_static(filepath):
 	return static_file(filepath, root='./static/')
 

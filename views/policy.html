@@ -1,0 +1,75 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+%include views/head.html
+<body>
+  <div id="body_bg">
+    %include views/pre-header.html
+    <div class="primary-container-group">
+      <!-- Background -->
+      <div class="primary-container-background">
+        <div class="primary-container"></div>
+        <div class="clearfix"></div>
+      </div>
+      <!--End Background -->
+      <div class="primary-container">
+        %include views/header.html
+        <!-- === END HEADER === -->
+        <!-- === BEGIN CONTENT === -->
+        <div id="content">
+          <div class="container">
+            <div class="row margin-vert-30 flex-md">
+              <!-- Side Column -->
+              <div class="col-md-3">
+                <!-- Recent Posts -->
+                <div class="panel panel-default" data-uk-sticky="{top:35, media:990, boundary:true}">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">About Us</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul class="posts-list">
+                      <li>
+                        <a href="/about" class="posts-list-title">Overview</a>
+                      </li>
+                      <li>
+                        <a href="/about/background" class="posts-list-title">Company Background</a>
+                      </li>
+                      <li>
+                        <a href="/about/structure" class="posts-list-title">Company Structure</a>
+                      </li>
+                      <li>
+                        <a href="/about/policy" class="posts-list-title">Business Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End recent Posts -->
+              </div>
+              <!-- End Side Column -->
+              <!-- Main Column -->
+              <div class="col-md-9">
+                <!-- Main Content -->
+                <h2>Business Policy</h2>
+                <p>
+                  We are committed to provide a safe and healthy working environment, and to prevent and eliminate hazards and risk which will minimize accidents, dangerous occurrence, occupational poisoning and disease in our organization.
+                </p>
+                <p>To achieve this, we shall comply with applicable legal and other related requirements and continually monitor and improve our OSH performance and management system.
+                </p>
+                  <!-- End Main Content -->
+                </div>
+                <!-- End Main Column -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- === END CONTENT === -->
+      <!-- === BEGIN FOOTER === -->
+      %include views/footer.html
+    </div>
+  </body>
+  </html>
+<!-- === END FOOTER === -->
