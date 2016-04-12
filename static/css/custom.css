@@ -72,3 +72,7 @@ a.posts-list-title {
 .rounded {
   border-radius: 5px;
 }
+#copyright p ,
+#footermenu p {
+  color: #dddddd;
+}
