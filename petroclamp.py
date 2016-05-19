@@ -31,13 +31,17 @@ def about_us3():
 def product():
 	return template("views/product.html")
 
-@route('/services')
-def service():
-	return template("views/services.html")
-
 @route('/investment_casting')
-def service():
-	return template("views/investmentcasting.html")
+def service1():
+	return template("views/investment_casting.html")
+
+@route('/sand_casting')
+def service2():
+	return template("views/sand_casting.html")
+
+@route('/facility')
+def service3():
+	return template("views/facility.html")
 
 @route('/qa')
 def QA():

@@ -76,3 +76,16 @@ a.posts-list-title {
 #footermenu p {
   color: #dddddd;
 }
+.background {
+  color: #b29900;
+}
+[class*='column-'] {
+  -webkit-column-gap: 25px;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+}
+.column-1-2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
