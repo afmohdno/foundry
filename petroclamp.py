@@ -27,9 +27,9 @@ def about_us2():
 def about_us3():
 	return template("views/policy.html")
 
-@route('/products')
-def product():
-	return template("views/product.html")
+@route('/manufacturing')
+def manufacturing():
+	return template("views/manufacturing.html")
 
 @route('/investment_casting')
 def service1():
@@ -43,13 +43,21 @@ def service2():
 def service3():
 	return template("views/facility.html")
 
-@route('/qa')
-def QA():
+@route('/quality/process')
+def process():
 	return template("views/qa.html")
+
+@route('/quality/testing')
+def testing():
+	return template("views/testing.html")
 
 @route('/customers')
 def customers():
 	return template("views/customers.html")
+
+@route('/certificate')
+def certificate():
+	return template("views/certificate.html")
 
 @route('/blank')
 def blank():
@@ -74,6 +82,7 @@ def error_500(error):
 # specifying the path for the files
 @route('/<filepath:path>')
 @route('/about/<filepath:path>')
+@route('/quality/<filepath:path>')
 def server_static(filepath):
 	return static_file(filepath, root='./static/')
 

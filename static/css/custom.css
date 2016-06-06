@@ -89,3 +89,17 @@ a.posts-list-title {
   -moz-column-count: 2;
   column-count: 2;
 }
+.olist h4 {
+  font-weight: 600;
+  color: #444;
+}
+.nospacing p {
+  margin: 0;
+}
+.h-spacing {
+  text-align: center;
+}
+.h-spacing img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
