@@ -101,7 +101,7 @@ def error_404(error):
 @error(500)
 def error_500(error):
 	"""Return a custom 500 error."""
-	return "Sorry, couldn't connect to server ."
+	return "Sorry, couldn't connect to server."
 
 # specifying the path for the files
 @route('/<filepath:path>')
