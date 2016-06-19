@@ -1,4 +1,6 @@
 from bottle import *
+import requests
+import json
 
 application = default_app()
 
@@ -6,6 +8,28 @@ application = default_app()
 @route('/')
 def main():
 	return template("views/index.html")
+
+@post('/contact-us')
+def contact_us():
+
+	name = request.forms.name
+	email = request.forms.email
+	message = request.forms.message
+
+	requests.post(
+		"https://api.mailgun.net/v3/mg.e2u.website/messages",
+		auth=("api", "key-14366526c7caae8e8cd517d98329d19c"),
+		data={"from": "Petroclamp Contact Us<petroclamp@e2u.website>",
+			  "to": ["anasfaris@yahoo.com","afmohdno@gmail.com"],
+			  "subject": "Message from Contact Us Page",
+			  "html": template(
+			  	'views/contact-email.html', 
+			  	name=name,			  	
+			  	message=message, 
+			  	email=email)
+	})
+
+	return json.dumps({'result':'success'})
 
 @route('/contact')
 def contact():
